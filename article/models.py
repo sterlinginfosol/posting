@@ -21,7 +21,7 @@ class Article(models.Model):
 	dateTime=models.DateField(auto_now=False, auto_now_add=False)
 	postedby=models.ForeignKey(UserProfile,default='1')
 
-	def __unicode__(self):
+	def __str__(self):
 		self.title
 
 """
