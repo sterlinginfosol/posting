@@ -11,7 +11,7 @@ class Advert(models.Model):
 	height=models.IntegerField(default='100')
 	min_width=models.IntegerField(default='90')
 	min_height=models.IntegerField(default='90')
-	display=models.CharField(max_length=67,default='')
+	display=models.CharField(max_length=67,default='a')
 	published=models.IntegerField(default='1')
 
 
