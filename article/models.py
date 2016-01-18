@@ -20,18 +20,10 @@ class Article(models.Model):
 	views=models.IntegerField(default='0')
 	dateTime=models.DateField(auto_now=False, auto_now_add=False)
 	postedby=models.ForeignKey(UserProfile,default='1')
+	published=models.IntegerField(default='1')
 
 	def __str__(self):
 		self.title
-
-"""
-class Category(models.Model):
-	id=models.AutoField(primary_key=True)
-	name=models.CharField(max_length=50)
-
-	def __str__(self):
-		self.name
-"""
 
 
 # Create your models here.
